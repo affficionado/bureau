@@ -1,0 +1,56 @@
+$normalColor: #4a4a4a;
+$lightColor: lighten(black, 60%);
+$linkColor: #7c7ec1;
+
+.bureau-hide {
+  transition: all 0.2s;
+  color: $lightColor;
+  
+  .ltx_abstract {
+    border-color: $lightColor !important;
+  }
+  
+  a {
+    color: lighten($linkColor, 20%) !important;
+  }
+
+  img {
+    opacity: 25%;
+  }
+
+  :is(.ltx_p,.ltx_td) {
+    color: $lightColor;
+  }
+
+  :is(table,tr,th,td) {
+    border-color: $lightColor !important;
+  }
+
+}
+
+
+.bureau-unhide {
+  transition: all 0.25s;
+  color: $normalColor;
+  scroll-padding-top: 3.25em;
+
+  .ltx_abstract {
+    border-color: $normalColor !important;
+  }
+  
+  a {
+    color: $linkColor !important;
+  }
+
+  img {
+    opacity: 100%;
+  }
+
+  :is(.ltx_p,.ltx_td) {
+    color: $normalColor;
+  }
+
+  :is(table,tr,th,td) {
+    border-color: $normalColor !important;
+  }
+}

@@ -1,0 +1,1 @@
+<%= Sveltex.render "landing", %{} %>

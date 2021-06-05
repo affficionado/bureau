@@ -1,0 +1,8 @@
+/* This file is for your main application css. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.25rem;
+}
+
+@import "../node_modules/bulma/bulma";
+@import "./hide";

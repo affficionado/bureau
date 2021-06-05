@@ -1,0 +1,6 @@
+<section class="hero is-fullheight">
+  <%= Sveltex.render "paper/header", %{id: @id, title: @title} %> </div>
+  <div class="hero-body container">
+    <%= Sveltex.render "paper/notfound", %{id: @id} %> </div>
+  </div>
+</section>

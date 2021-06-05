@@ -1,0 +1,27 @@
+<section class="hero is-fullheight">
+  <%= Sveltex.render "paper/header", %{
+    id: @paper.arxiv_id,
+    status: @paper.status,
+  }%>
+  </div>
+
+  <div class="hero-body container">
+      <%= case @paper.status do 
+        "notlatex" -> Sveltex.render "paper/status/notlatex", %{
+          title: @paper.title, 
+          arxiv_pdf_url: arxiv_pdf_url(@paper.arxiv_id)
+        }
+        "rendering" -> Sveltex.render "paper/status/rendering", %{
+          id: @paper.arxiv_id,
+          title: @paper.title, 
+          arxiv_pdf_url: arxiv_pdf_url(@paper.arxiv_id)
+        }
+        "failure" -> Sveltex.render "paper/status/failure", %{
+          id: @paper.arxiv_id,
+          title: @paper.title,
+          arxiv_pdf_url: arxiv_pdf_url(@paper.arxiv_id) 
+        }
+      end %>
+      </div>
+  </div>
+</section>

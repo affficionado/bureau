@@ -1,0 +1,7 @@
+<%= Sveltex.render "paper/show", %{
+  id: @paper.id,
+  toc: @paper.toc,
+  body: @paper.body,
+  arxiv_pdf_url: arxiv_pdf_url(@paper.arxiv_id) 
+}%>
+</div>
