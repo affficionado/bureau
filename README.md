@@ -8,3 +8,5 @@ To run dev environment:
 ```
 mix setup && mix phx.server
 ```
+
+Subject of my [bachelor thesis](https://github.com/andrhua/bachelor).
