@@ -1,20 +1,9 @@
-# Bureau
+![image](https://user-images.githubusercontent.com/15843809/122953254-3e0cbd00-d387-11eb-8a21-116d4cbf75a8.png)
+Simple web app displaying LaTeX written arXiv papers in HTML with semantic content filtering.
 
-To start your Phoenix server:
+Conversion from LaTeX to HTML is done by [Sisyphe](https://github.com/andrhua/sisyphe).
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+To run dev environment:
+```
+mix setup && mix phx.server
+```
